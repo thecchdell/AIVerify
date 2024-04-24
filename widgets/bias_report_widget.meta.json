@@ -1,0 +1,32 @@
+{
+  "cid": "bias_report_widget",
+  "widgetSize": {
+    "minW": 12,
+    "minH": 1,
+    "maxW": 12,
+    "maxH": 36
+  },
+  "name": "Bias Report Widget",
+  "description": "Widget for reporting on bias in dataset",
+  "dynamicHeight": true,
+  "dependencies": [
+    {
+      "cid": "bias_algo"
+    },
+    {
+      "cid": "feature_selector"
+    }
+  ],
+  "mockdata": [
+    {
+      "type": "Algorithm",
+      "cid": "bias_algo",
+      "datapath": "bias_algo.sample.json"
+    },
+    {
+      "type": "InputBlock",
+      "cid": "feature_selector",
+      "datapath": "feature_selector.sample.json"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Algorithm Plugin Input Arguments",
+    "description": "A schema for algorithm plugin input arguments",
+    "type": "object",
+    "required": [
+        "test_variable",
+        "target_variable"
+    ],
+    "properties": {
+        "test_variable": {
+            "title": "Test Variable",
+            "description": "Variable to test for bias",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "target_variable": {
+            "title": "Target Variable",
+            "description": "Target variable of the report",
+            "type": "string"
+        }
+    }
+}
